@@ -11,6 +11,11 @@
 		1A563A052878F70800994DE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A042878F70800994DE1 /* ContentView.swift */; };
 		1A563A072878F70A00994DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A563A062878F70A00994DE1 /* Assets.xcassets */; };
 		1A563A0A2878F70A00994DE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A563A092878F70A00994DE1 /* Preview Assets.xcassets */; };
+		1A563A122878F77B00994DE1 /* EconomiaApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A112878F77A00994DE1 /* EconomiaApiResponse.swift */; };
+		1A563A142878F79500994DE1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A132878F79500994DE1 /* APIService.swift */; };
+		1A563A162878F7A500994DE1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1A563A152878F7A500994DE1 /* Credits.rtf */; };
+		1A563A182878FBFE00994DE1 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A172878FBFE00994DE1 /* ApplicationMenu.swift */; };
+		1A7325DC287B1E0600D84702 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7325DA287B1D6E00D84702 /* ServiceManagement.framework */; platformFilter = maccatalyst; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,12 @@
 		1A563A062878F70A00994DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A563A092878F70A00994DE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A563A0B2878F70A00994DE1 /* ValorDolar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ValorDolar.entitlements; sourceTree = "<group>"; };
+		1A563A112878F77A00994DE1 /* EconomiaApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EconomiaApiResponse.swift; path = "../../../Downloads/Dad Jokes/Dad Jokes/EconomiaApiResponse.swift"; sourceTree = "<group>"; };
+		1A563A132878F79500994DE1 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = "../../../Downloads/Dad Jokes/Dad Jokes/APIService.swift"; sourceTree = "<group>"; };
+		1A563A152878F7A500994DE1 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Credits.rtf; path = "../../../Downloads/Dad Jokes/Dad Jokes/Credits.rtf"; sourceTree = "<group>"; };
+		1A563A172878FBFE00994DE1 /* ApplicationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationMenu.swift; path = "../../../Downloads/Dad Jokes/Dad Jokes/ApplicationMenu.swift"; sourceTree = "<group>"; };
+		1A563A192878FD6A00994DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A7325DA287B1D6E00D84702 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7325DC287B1E0600D84702 /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +50,7 @@
 			children = (
 				1A563A012878F70800994DE1 /* ValorDolar */,
 				1A563A002878F70800994DE1 /* Products */,
+				1A7325D9287B1D6E00D84702 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +65,14 @@
 		1A563A012878F70800994DE1 /* ValorDolar */ = {
 			isa = PBXGroup;
 			children = (
+				1A563A192878FD6A00994DE1 /* Info.plist */,
 				1A563A022878F70800994DE1 /* ValorDolarApp.swift */,
+				1A563A112878F77A00994DE1 /* EconomiaApiResponse.swift */,
 				1A563A042878F70800994DE1 /* ContentView.swift */,
+				1A563A172878FBFE00994DE1 /* ApplicationMenu.swift */,
+				1A563A132878F79500994DE1 /* APIService.swift */,
 				1A563A062878F70A00994DE1 /* Assets.xcassets */,
+				1A563A152878F7A500994DE1 /* Credits.rtf */,
 				1A563A0B2878F70A00994DE1 /* ValorDolar.entitlements */,
 				1A563A082878F70A00994DE1 /* Preview Content */,
 			);
@@ -67,6 +85,14 @@
 				1A563A092878F70A00994DE1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A7325D9287B1D6E00D84702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A7325DA287B1D6E00D84702 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A563A0A2878F70A00994DE1 /* Preview Assets.xcassets in Resources */,
+				1A563A162878F7A500994DE1 /* Credits.rtf in Resources */,
 				1A563A072878F70A00994DE1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A563A052878F70800994DE1 /* ContentView.swift in Sources */,
+				1A563A182878FBFE00994DE1 /* ApplicationMenu.swift in Sources */,
 				1A563A032878F70800994DE1 /* ValorDolarApp.swift in Sources */,
+				1A563A142878F79500994DE1 /* APIService.swift in Sources */,
+				1A563A122878F77B00994DE1 /* EconomiaApiResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +306,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ValorDolar/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +334,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ValorDolar/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
