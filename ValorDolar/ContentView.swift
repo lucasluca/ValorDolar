@@ -9,27 +9,40 @@ import SwiftUI
 import ServiceManagement
 
 struct ContentView: View {
-    @AppStorage("checkedStored") var checkedStored: String = "true"
-    @State private var checked = false
-    let helperBundleIdentifier = "LucasMendes.ValorDolar"
-
+    
+    @AppStorage("checkedStored") var checkedStored: String = "false"
+    @State private var launchAtLogin = false {
+        didSet {
+            checkedStored = String(launchAtLogin)
+            SMLoginItemSetEnabled(Constants.helperBundleID as CFString,
+                                  launchAtLogin)
+        }
+    }
+    
+    private struct Constants {
+        static let helperBundleID = "LucasMendes.AutoLauncher"
+    }
+    
+    func signIn() {
+        launchAtLogin.toggle()
+    }
+    
     var body: some View {
         HStack {
-            Toggle("Start at login", isOn: $checked)
-                .toggleStyle(.checkbox)
-                .onChange(of: checked) { value in
-                    let state = SMLoginItemSetEnabled(helperBundleIdentifier as CFString, checked)
-                    print("Setting is enabled \(state)")
-                    checkedStored = String(value)
+            Button(action: signIn) {
+                Toggle("Open at login", isOn: $launchAtLogin)
+                    .toggleStyle(.checkbox)
+            }
+            .onAppear {
+                if checkedStored == "true" {
+                    self.launchAtLogin = true
+                } else {
+                    self.launchAtLogin = false
                 }
-                .onAppear {
-                    if checkedStored == "true" {
-                        self.checked = true
-                    } else {
-                        self.checked = false
-                    }
-                }
+            }
+            
             Spacer()
+            
         }
         .padding(.leading, 15)
         

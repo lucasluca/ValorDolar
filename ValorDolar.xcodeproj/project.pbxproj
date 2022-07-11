@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1209E2287B311A0075DCCA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7325DA287B1D6E00D84702 /* ServiceManagement.framework */; };
 		1A563A032878F70800994DE1 /* ValorDolarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A022878F70800994DE1 /* ValorDolarApp.swift */; };
 		1A563A052878F70800994DE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A042878F70800994DE1 /* ContentView.swift */; };
 		1A563A072878F70A00994DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A563A062878F70A00994DE1 /* Assets.xcassets */; };
@@ -15,8 +16,23 @@
 		1A563A142878F79500994DE1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A132878F79500994DE1 /* APIService.swift */; };
 		1A563A162878F7A500994DE1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1A563A152878F7A500994DE1 /* Credits.rtf */; };
 		1A563A182878FBFE00994DE1 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A172878FBFE00994DE1 /* ApplicationMenu.swift */; };
-		1A7325DC287B1E0600D84702 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7325DA287B1D6E00D84702 /* ServiceManagement.framework */; platformFilter = maccatalyst; };
+		1A7325E6287B262E00D84702 /* AutoLauncherAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7325E5287B262E00D84702 /* AutoLauncherAppDelegate.swift */; };
+		1A7325F4287B28E900D84702 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7325F3287B28E800D84702 /* main.swift */; };
+		1A7325F6287B299800D84702 /* AutoLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A7325E3287B262E00D84702 /* AutoLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A7325F5287B295700D84702 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				1A7325F6287B299800D84702 /* AutoLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A5639FF2878F70800994DE1 /* ValorDolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorDolar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +47,11 @@
 		1A563A172878FBFE00994DE1 /* ApplicationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationMenu.swift; path = "../../../Downloads/Dad Jokes/Dad Jokes/ApplicationMenu.swift"; sourceTree = "<group>"; };
 		1A563A192878FD6A00994DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1A7325DA287B1D6E00D84702 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		1A7325E3287B262E00D84702 /* AutoLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7325E5287B262E00D84702 /* AutoLauncherAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLauncherAppDelegate.swift; sourceTree = "<group>"; };
+		1A7325EE287B262F00D84702 /* AutoLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoLauncher.entitlements; sourceTree = "<group>"; };
+		1A7325F2287B271000D84702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A7325F3287B28E800D84702 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +59,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A7325DC287B1E0600D84702 /* ServiceManagement.framework in Frameworks */,
+				1A1209E2287B311A0075DCCA /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7325E0287B262E00D84702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				1A563A012878F70800994DE1 /* ValorDolar */,
+				1A7325E4287B262E00D84702 /* AutoLauncher */,
 				1A563A002878F70800994DE1 /* Products */,
 				1A7325D9287B1D6E00D84702 /* Frameworks */,
 			);
@@ -58,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				1A5639FF2878F70800994DE1 /* ValorDolar.app */,
+				1A7325E3287B262E00D84702 /* AutoLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +125,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1A7325E4287B262E00D84702 /* AutoLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				1A7325F2287B271000D84702 /* Info.plist */,
+				1A7325E5287B262E00D84702 /* AutoLauncherAppDelegate.swift */,
+				1A7325EE287B262F00D84702 /* AutoLauncher.entitlements */,
+				1A7325F3287B28E800D84702 /* main.swift */,
+			);
+			path = AutoLauncher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,6 +146,7 @@
 				1A5639FB2878F70800994DE1 /* Sources */,
 				1A5639FC2878F70800994DE1 /* Frameworks */,
 				1A5639FD2878F70800994DE1 /* Resources */,
+				1A7325F5287B295700D84702 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -113,6 +155,23 @@
 			name = ValorDolar;
 			productName = ValorDolar;
 			productReference = 1A5639FF2878F70800994DE1 /* ValorDolar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A7325E2287B262E00D84702 /* AutoLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7325EF287B262F00D84702 /* Build configuration list for PBXNativeTarget "AutoLauncher" */;
+			buildPhases = (
+				1A7325DF287B262E00D84702 /* Sources */,
+				1A7325E0287B262E00D84702 /* Frameworks */,
+				1A7325E1287B262E00D84702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoLauncher;
+			productName = AutoLauncher;
+			productReference = 1A7325E3287B262E00D84702 /* AutoLauncher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +185,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					1A5639FE2878F70800994DE1 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1A7325E2287B262E00D84702 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -144,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				1A5639FE2878F70800994DE1 /* ValorDolar */,
+				1A7325E2287B262E00D84702 /* AutoLauncher */,
 			);
 		};
 /* End PBXProject section */
@@ -159,6 +222,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A7325E1287B262E00D84702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -171,6 +241,15 @@
 				1A563A032878F70800994DE1 /* ValorDolarApp.swift in Sources */,
 				1A563A142878F79500994DE1 /* APIService.swift in Sources */,
 				1A563A122878F77B00994DE1 /* EconomiaApiResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7325DF287B262E00D84702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7325E6287B262E00D84702 /* AutoLauncherAppDelegate.swift in Sources */,
+				1A7325F4287B28E900D84702 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +379,21 @@
 				CODE_SIGN_ENTITLEMENTS = ValorDolar/ValorDolar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ValorDolar/Preview Content\"";
 				DEVELOPMENT_TEAM = W3QFMY34SN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ValorDolar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = LucasMendes.ValorDolar;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LucasMendes.ValorDolar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,21 +408,80 @@
 				CODE_SIGN_ENTITLEMENTS = ValorDolar/ValorDolar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ValorDolar/Preview Content\"";
 				DEVELOPMENT_TEAM = W3QFMY34SN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ValorDolar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = LucasMendes.ValorDolar;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LucasMendes.ValorDolar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A7325F0287B262F00D84702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3QFMY34SN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoLauncher/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LucasMendes.AutoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A7325F1287B262F00D84702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoLauncher/AutoLauncher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3QFMY34SN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoLauncher/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LucasMendes.AutoLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -365,6 +504,15 @@
 			buildConfigurations = (
 				1A563A0F2878F70A00994DE1 /* Debug */,
 				1A563A102878F70A00994DE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7325EF287B262F00D84702 /* Build configuration list for PBXNativeTarget "AutoLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7325F0287B262F00D84702 /* Debug */,
+				1A7325F1287B262F00D84702 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
