@@ -55,7 +55,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let apiService = APIService(urlString: url)
         do {
             let response: EconomiaApiResponse = try await apiService.getJSON()
-            let coinFloat = Float(response.usdbrl.ask) ?? 0
+            let coinFloat = Float(response.USDBRL.ask) ?? 0
             let roundValue = String(format:"%.2f", coinFloat)
             changeStatusBarValue(roundValue)
         } catch {
