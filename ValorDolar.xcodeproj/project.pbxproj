@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A563A032878F70800994DE1 /* ValorDolarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A022878F70800994DE1 /* ValorDolarApp.swift */; };
-		1A563A052878F70800994DE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A563A042878F70800994DE1 /* ContentView.swift */; };
 		1A563A072878F70A00994DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A563A062878F70A00994DE1 /* Assets.xcassets */; };
 		1A563A0A2878F70A00994DE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A563A092878F70A00994DE1 /* Preview Assets.xcassets */; };
 		1A7922BA2C222F240026E0CA /* EconomiaApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7922B92C222F240026E0CA /* EconomiaApiResponse.swift */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		1A5639FF2878F70800994DE1 /* ValorDolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorDolar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A563A022878F70800994DE1 /* ValorDolarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorDolarApp.swift; sourceTree = "<group>"; };
-		1A563A042878F70800994DE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A563A062878F70A00994DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A563A092878F70A00994DE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A563A0B2878F70A00994DE1 /* ValorDolar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ValorDolar.entitlements; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 				1A563A192878FD6A00994DE1 /* Info.plist */,
 				1A563A022878F70800994DE1 /* ValorDolarApp.swift */,
 				1A7922B92C222F240026E0CA /* EconomiaApiResponse.swift */,
-				1A563A042878F70800994DE1 /* ContentView.swift */,
 				1A563A062878F70A00994DE1 /* Assets.xcassets */,
 				1A563A0B2878F70A00994DE1 /* ValorDolar.entitlements */,
 				1A563A082878F70A00994DE1 /* Preview Content */,
@@ -171,7 +168,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A563A052878F70800994DE1 /* ContentView.swift in Sources */,
 				1A7922BE2C2231620026E0CA /* ApplicationMenu.swift in Sources */,
 				1A7922BC2C222F710026E0CA /* APIService.swift in Sources */,
 				1A7922BA2C222F240026E0CA /* EconomiaApiResponse.swift in Sources */,
