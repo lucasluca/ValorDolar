@@ -27,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusBarItem.button?.title = "Loading.."
         statusBarItem.menu = menu.createMenu()
         fetch()
-        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) {
+        Timer.scheduledTimer(withTimeInterval: 60 * 10, repeats: true) {
             (_) in
             self.fetch()
         }
